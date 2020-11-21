@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.navigation {
+  width: 100%;
+  border-top: 1.5rem solid #fae613;
+}
+.navigation .main-nav {
+  margin: 0 13.5%;
+  position: relative;
+  height: 13rem;
+}
+.navigation .main-nav__logo-box {
+  display: inline-block;
+  height: 100%;
+}
+.navigation .main-nav__logo {
+  height: 100%;
+}
+.navigation .main-nav__search-icon-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2rem 0;
+}
+.navigation .main-nav__list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2rem;
+}
+.navigation .main-nav__menu-item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1654a8;
+}
+.navigation .main-nav__menu-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.navigation .sub-nav {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #005daa, #073e88);
+}
+.navigation .sub-nav__list {
+  display: flex;
+  padding: 1rem 13.5%;
+  justify-content: space-between;
+}
+.navigation .sub-nav__menu-item {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=main.css.map */

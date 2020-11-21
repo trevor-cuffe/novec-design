@@ -1,0 +1,15 @@
+{
+  "name": "deksia-intern-eval",
+  "version": "1.0.0",
+  "description": "Intern Eval Project for Deksia Internship",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass sass/main.scss styles/main.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
