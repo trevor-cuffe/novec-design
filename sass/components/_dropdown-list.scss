@@ -1,0 +1,50 @@
+.dropdown-list {
+	&__item {
+		background-image: linear-gradient(to bottom, #e6e6e666, #ddd);
+		padding: 6rem;
+		list-style: none;
+
+		h3 {
+			display: inline-block;
+			width: 70%;
+		}
+
+		&:first-child {
+			padding-top: 8rem;
+		}
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__checkbox-label {
+		background-color: $color-primary;
+		color: white;
+		display: inline-block;
+		height: 1.2em;
+		width: 1.2em;
+		border-radius: 50%;
+		padding-left: .3em;
+		float: right;
+		@include clearfix;
+		margin-right: $row-inset-standard;
+		position: relative;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__content {
+		width: 70%;
+		height: 0;
+		overflow: hidden;
+		transition: all 0.3s;
+	}
+
+	&__checkbox:checked + &__content {
+		height: auto;
+		padding-top: 3rem;
+	}
+}

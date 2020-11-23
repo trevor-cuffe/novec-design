@@ -139,6 +139,52 @@ body {
   width: 12rem;
 }
 
+.dropdown-list__item {
+  background-image: linear-gradient(to bottom, #e6e6e666, #ddd);
+  padding: 6rem;
+  list-style: none;
+}
+.dropdown-list__item h3 {
+  display: inline-block;
+  width: 70%;
+}
+.dropdown-list__item:first-child {
+  padding-top: 8rem;
+}
+.dropdown-list__checkbox {
+  display: none;
+}
+.dropdown-list__checkbox-label {
+  background-color: #1654a8;
+  color: white;
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+  padding-left: 0.3em;
+  float: right;
+  margin-right: 13.5%;
+  position: relative;
+}
+.dropdown-list__checkbox-label::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dropdown-list__checkbox-label:hover {
+  cursor: pointer;
+}
+.dropdown-list__content {
+  width: 70%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.dropdown-list__checkbox:checked + .dropdown-list__content {
+  height: auto;
+  padding-top: 3rem;
+}
+
 .graph {
   height: 35rem;
   width: 78rem;
@@ -540,6 +586,21 @@ body {
 .single-photo img {
   width: 100%;
   display: block;
+}
+
+.faq::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.faq__left-col {
+  position: absolute;
+  width: 25%;
+  padding-top: 7rem;
+}
+.faq__right-col {
+  width: 60%;
+  float: right;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -174,3 +174,17 @@
 		display: block;
 	}
 }
+
+.faq {
+	@include clearfix;
+	&__left-col {
+		position: absolute;
+		width: 25%;
+		padding-top: $row-spacing-vertical;
+	}
+
+	&__right-col {
+		width: 60%;
+		float: right;
+	}
+}
