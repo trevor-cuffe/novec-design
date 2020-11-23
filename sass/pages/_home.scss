@@ -99,9 +99,15 @@
 	}
 	&__list {
 		margin-left: 4rem;
+
+		span {
+			position: relative;
+			left: -0.5rem;
+		}
 	}
 
-	&__graph {
+	&__graph-container {
+		width: 57%;
 		margin: 0 auto 6rem;
 	}
 }

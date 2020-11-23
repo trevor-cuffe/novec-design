@@ -201,14 +201,9 @@ body {
 }
 
 .graph {
-  height: 35rem;
-  width: 78rem;
-  max-width: 100%;
-  position: relative;
-}
-.graph__base {
   width: 100%;
-  height: 100%;
+  padding-bottom: 50%;
+  position: relative;
   background-color: #f2f2f2;
   border-left: 1px solid #a0a0a0;
   border-bottom: 1px solid #a0a0a0;
@@ -564,7 +559,12 @@ body {
 .rates__list {
   margin-left: 4rem;
 }
-.rates__graph {
+.rates__list span {
+  position: relative;
+  left: -0.5rem;
+}
+.rates__graph-container {
+  width: 57%;
   margin: 0 auto 6rem;
 }
 
