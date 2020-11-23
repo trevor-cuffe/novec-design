@@ -21,7 +21,6 @@
 	&__checkbox-label {
 		background-color: $color-primary;
 		color: white;
-		display: inline-block;
 		height: 1.2em;
 		width: 1.2em;
 		border-radius: 50%;
@@ -36,6 +35,10 @@
 		}
 	}
 
+	&__expanded {
+		display: none;
+	}
+
 	&__content {
 		width: 70%;
 		height: 0;
@@ -43,7 +46,14 @@
 		transition: all 0.3s;
 	}
 
-	&__checkbox:checked + &__content {
+	&__checkbox:checked + &__checkbox-label > &__expanded {
+		display: inline;
+	}
+	&__checkbox:checked + &__checkbox-label > &__collapsed {
+		display: none;
+	}
+
+	&__checkbox:checked ~ &__content {
 		height: auto;
 		padding-top: 3rem;
 	}

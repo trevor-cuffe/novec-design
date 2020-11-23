@@ -37,7 +37,7 @@
 
 .service-area {
 	&__grid-container {
-		width: 38rem;
+		max-width: 33rem;
 	}
 
 	.bubble-grid__item--content {
@@ -46,6 +46,7 @@
 	}
 
 	&__map {
+		width: 100%;
 		&--image {
 			width: 100%;
 		}
@@ -85,7 +86,7 @@
 
 	&__header {
 		display: inline-block;
-		width: 50%;
+		width: 49.5%;
 		padding-right: 2rem;
 		vertical-align: middle;
 	}
