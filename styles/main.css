@@ -325,13 +325,13 @@ body {
 }
 .navigation .main-nav {
   position: relative;
-  height: 13rem;
 }
 .navigation .main-nav__logo-box {
   display: inline-block;
   height: 100%;
   width: 155px;
-  position: relative;
+  position: absolute;
+  z-index: -1;
 }
 .navigation .main-nav__logo {
   height: 100%;
@@ -342,15 +342,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.navigation .main-nav__right-content {
+  height: 100%;
+  padding: 3rem 0;
+}
 .navigation .main-nav__search-icon-container {
-  float: right;
-  padding: 2rem 0;
+  text-align: right;
+  height: 3em;
 }
 .navigation .main-nav__list {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 2rem;
+  text-align: right;
+  height: 1.5em;
 }
 .navigation .main-nav__menu-item {
   display: inline-block;
@@ -360,6 +362,17 @@ body {
 }
 .navigation .main-nav__menu-item:not(:last-child) {
   margin-right: 2rem;
+}
+.navigation .main-nav__menu-item:first-child::after {
+  content: "";
+  width: 16px;
+  height: 1em;
+  margin-left: 0.5rem;
+  background-image: url("../public/images/menu-triangle.svg");
+  background-size: 16px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 .navigation .sub-nav {
   width: 100%;
@@ -387,6 +400,7 @@ body {
 .headline__col {
   width: 49%;
   height: 100%;
+  vertical-align: middle;
   display: inline-block;
 }
 .headline__col:not(:last-child) {
@@ -451,11 +465,14 @@ body {
   display: inline-block;
   width: 50%;
   padding-right: 2rem;
+  vertical-align: middle;
 }
 .rates__right-para {
   display: inline-block;
   width: 49.5%;
   padding-left: 2rem;
+  vertical-align: middle;
+  line-height: 1.5em;
 }
 .rates__list {
   margin-left: 4rem;

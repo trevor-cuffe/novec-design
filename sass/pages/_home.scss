@@ -7,6 +7,7 @@
 	&__col {
 		width: 49%;
 		height: 100%;
+		vertical-align: middle;
 		display: inline-block;
 
 		&:not(:last-child) {
@@ -86,11 +87,14 @@
 		display: inline-block;
 		width: 50%;
 		padding-right: 2rem;
+		vertical-align: middle;
 	}
 	&__right-para {
 		display: inline-block;
 		width: 49.5%;
 		padding-left: 2rem;
+		vertical-align: middle;
+		line-height: 1.5em;
 	}
 	&__list {
 		margin-left: 4rem;

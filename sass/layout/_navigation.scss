@@ -4,13 +4,14 @@
 
 	.main-nav {
 		position: relative;
-		height: 13rem;
+		// height: 13rem;
 
 		&__logo-box {
 			display: inline-block;
 			height: 100%;
 			width: 155px;
-			position: relative;
+			position: absolute;
+			z-index: -1;
 		}
 
 		&__logo {
@@ -20,19 +21,22 @@
 			@include center-x-y;
 		}
 
+		&__right-content {
+			height: 100%;
+			padding: 3rem 0;
+		}
+
 		&__search-icon-container {
-			float: right;
-			padding: 2rem 0;
+			text-align: right;
+			height: 3em;
 		}
 
 		&__search-icon {
 		}
 
 		&__list {
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			margin-bottom: 2rem;
+			text-align: right;
+			height: 1.5em;
 		}
 
 		&__menu-item {
@@ -43,6 +47,18 @@
 
 			&:not(:last-child) {
 				margin-right: 2rem;
+			}
+
+			&:first-child::after {
+				content: "";
+				width: 16px;
+				height: 1em;
+				margin-left: 0.5rem;
+				background-image: url("../public/images/menu-triangle.svg");
+				background-size: 16px 8px;
+				background-position: center;
+				background-repeat: no-repeat;
+				display: inline-block;
 			}
 		}
 	}
