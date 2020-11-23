@@ -3,5 +3,29 @@
 
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
+@import "components/bubbles";
+@import "components/button";
+@import "components/graph";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
 @import "layout/navigation";
+
+@import "pages/home";
+
+//NEXT STEPS:
+// adjust spacing of top menu, height definition on main nav
+// addicons under header image row
+// triangle by first main nav menu item (use an ::after pseudo-element)
+// adjust row size - percentage, margin-auto, max-width
+// double-check font-sizes - base around font size 22px?
+// headline columns - fix height to match
+// icons for benefit blocks, service blocks
+// rates paragraph spacing
+// add spans to li's, with position: relative, left: -10px;
+// *** Add graph to rates *** //
+// *** testimony image spacing *** //
+// round corners on testimony arrows - change these to SVG?

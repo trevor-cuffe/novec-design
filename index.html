@@ -10,51 +10,300 @@
 <body>
     <div class="navigation">
         <nav class="main-nav">
-            <div class="main-nav__logo-box">
-                <img src="public/Novec-logo.png" alt="Novec Logo" class="main-nav__logo">
+            <div class="row">
+                <div class="main-nav__logo-box">
+                    <img src="public/images/Novec-logo.png" alt="Novec Logo" class="main-nav__logo">
+                </div>
+                <div class="main-nav__search-icon-container">
+                    <img src="public/images/search-solid.png" alt="search icon" class="main-nav__search-icon">
+                </div>
+                <ul class="main-nav__list">
+                    <li class="main-nav__menu-item">Menu</li>
+                    <li class="main-nav__menu-item">Menu</li>
+                    <li class="main-nav__menu-item">Menu</li>
+                    <li class="main-nav__menu-item">Menu</li>
+                </ul>
             </div>
-            <div class="main-nav__search-icon-container">
-                <img src="public/search-solid.png" alt="search icon" class="main-nav__search-icon">
-            </div>
-            <ul class="main-nav__list">
-                <li class="main-nav__menu-item">Menu</li>
-                <li class="main-nav__menu-item">Menu</li>
-                <li class="main-nav__menu-item">Menu</li>
-                <li class="main-nav__menu-item">Menu</li>
-            </ul>
         </nav>
     
         <nav class="sub-nav">
-            <ul class="sub-nav__list">
-                <li class="sub-nav__menu-item">Sub Menu</li>
-                <li class="sub-nav__menu-item">Sub Menu</li>
-                <li class="sub-nav__menu-item">Sub Menu</li>
-                <li class="sub-nav__menu-item">Sub Menu</li>
-                <li class="sub-nav__menu-item">Sub Menu</li>
-                <li class="sub-nav__menu-item">Sub Menu</li>
-                <li class="sub-nav__menu-item">Sub Menu</li>
-            </ul>
+            <div class="row">
+                <ul class="sub-nav__list">
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                    <li class="sub-nav__menu-item">Sub Menu</li>
+                </ul>
+            </div>
         </nav>
     </div>
 
     <header class="header">
-        <div class="header__image-row">
-            <div class="header__content-block">
-                <h1 class="heading--primary">Natural Gas Services</h1>
-                <h3 class="heading--tertiary">Super Neat Subhead</h3>
-                <p>NOVEC Energy Solutions is pleased to offer natural gascustomers in Pennsylvania, Maryland, Virginia, Districtof Columbia and Kentucky the option to enroll in our</p>
-                <a href="#" class="btn btn-primary">Sign Up</a>
+        <div class="header__image-bg">
+            <div class="row">
+                <div class="header__content-block">
+                    <h1 class="heading-primary mb-small">Natural Gas Services</h1>
+                    <h3 class="heading-tertiary mb-small">Super Neat Subhead</h3>
+                    <p class="mb-small">NOVEC Energy Solutions is pleased to offer natural gas customers in Pennsylvania, Maryland, Virginia, District of Columbia and Kentucky the option to enroll in our</p>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
             </div>
         </div>
         <div class="header__sub-row">
-            <ul class="header__option-list">
-                <li class="header__option">Billing & Payment</li>
-                <li class="header__option">Report a problem</li>
-                <li class="header__option">Moving or canceling service</li>
-                <li class="header__option">Switching service providers</li>
-            </ul>
+            <div class="row">
+                <ul class="header__sub-row__option-list">
+                    <li class="header__sub-row__option">Billing<br>& Payment</li>
+                    <li class="header__sub-row__option">Report<br>a problem</li>
+                    <li class="header__sub-row__option">Moving or<br>canceling service</li>
+                    <li class="header__sub-row__option">Switching service<br>providers</li>
+                </ul>
+            </div>
         </div>
+
     </header>
+
+    <main>
+        <section class="headline">
+            <div class="row row--section">
+                <div class="headline__col">
+                    <h1 class="heading-primary mb-med">H1. Headline 1 Styling and spacing</h1>
+                    <h2 class="heading-secondary mb-big">H2. headline 2 styling</h2>
+                    <h3 class="heading-tertiary">H3 Subhead styling & spacing for this website</h3>
+                </div>
+                <div class="headline__col">
+                    <p class="headline__para mb-med">
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                    </p>
+                    <ul class="headline__list mb-med">
+                        <li class="headline__list-item">Lorem ipsum dolor sit amet, consectetur</li>
+                        <li class="headline__list-item">Lorem ipsum dolor sit amet, consectetur</li>
+                        <li class="headline__list-item">Lorem ipsum dolor sit amet, consectetur</li>
+                        <li class="headline__list-item">Lorem ipsum dolor sit amet, consectetur</li>
+                    </ul>
+                    <a href="#" class="headline__link">Text Link Treatment <span class="headline__link--chevron">&gt;</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="row row--section">
+                <h1 class="heading-primary mb-med heading-center">Benefits of buying natural gas through novec</h1>
+                <div class="bubble-grid">
+                    <div class="bubble-grid__item bubble-grid__item--grey">
+                        <div class="bubble-grid__item--icon"></div>
+                        <div class="bubble-grid__item--content">
+                            <h3 class="heading-tertiary mb-small">Benefit #1</h3>
+                            <p>
+                                <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bubble-grid__item bubble-grid__item--blue">
+                        <div class="bubble-grid__item--icon"></div>
+                        <div class="bubble-grid__item--content">
+                            <h3 class="heading-tertiary mb-small">Benefit #2</h3>
+                            <p>
+                                <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bubble-grid__item bubble-grid__item--blue">
+                        <div class="bubble-grid__item--icon"></div>
+                        <div class="bubble-grid__item--content">
+                            <h3 class="heading-tertiary mb-small">Benefit #3</h3>
+                            <p>
+                                <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bubble-grid__item bubble-grid__item--grey">
+                        <div class="bubble-grid__item--icon"></div>
+                        <div class="bubble-grid__item--content">
+                            <h3 class="heading-tertiary mb-small">Benefit #4</h3>
+                            <p>
+                                <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="photos">
+            <div class="photos__image">
+                <img src="../public/images/AdobeStock_224739957.png" alt="Thermostat Photo">
+            </div>
+            <div class="photos__image">
+                <img src="../public/images/AdobeStock_299906163.png" alt="Family Photo">
+            </div>
+        </section>
+
+        <section class="service-area">
+            <div class="row row--section">
+                <h1 class="heading-primary heading-center mb-big">Natural Gas Service Area</h1>
+                <div class="col-40">
+                    <p class="mb-med">
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                    <h3 class="heading-tertiary mb-small">Other Services</h3>
+                    <div class="service-area__grid-container mb-med">
+                        <div class="bubble-grid">
+                            <div class="bubble-grid__item bubble-grid__item--small bubble-grid__item--blue">
+                                <div class="bubble-grid__item--icon"></div>
+                                <div class="bubble-grid__item--content">Other Service</div>
+                            </div>
+                            <div class="bubble-grid__item bubble-grid__item--small bubble-grid__item--blue">
+                                <div class="bubble-grid__item--icon"></div>
+                                <div class="bubble-grid__item--content">Other Service</div>
+                            </div>
+                            <div class="bubble-grid__item bubble-grid__item--small bubble-grid__item--blue">
+                                <div class="bubble-grid__item--icon"></div>
+                                <div class="bubble-grid__item--content">Other Service</div>
+                            </div>
+                            <div class="bubble-grid__item bubble-grid__item--small bubble-grid__item--blue">
+                                <div class="bubble-grid__item--icon"></div>
+                                <div class="bubble-grid__item--content">Other Service</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-small">
+                        Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                    <a href="#" class="btn btn-primary">CTA</a>
+                </div>
+                <div class="col-60">
+                    <div class="service-area__map">
+                        <img src="../public/images/map-filled.png" alt="US Map" class="service-area__map--image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sign-up">
+            <div class="row--section">
+                <div class="row">
+                    <div class="sign-up__col-left">
+                        <img src="../public/images/AdobeStock_300395016.png" alt="Family Photo">
+                    </div>
+                    <div class="sign-up__col-right">
+                        <h2 class="heading-secondary mb-med">H2. Heading 2 Styling</h2>
+                        <p class="mb-med">
+                            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                        </p>
+                        <ul class="sign-up__list mb-med">
+                            <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rates">
+            <div class="row row--section">
+                <h1 class="heading-primary rates__header mb-med">Fixed rate vs variable rate gas prices what to know</h1>
+                <p class="rates__right-para mb-med">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                </p>
+                <div class="bubble-grid mb-big">
+                    <div class="bubble-grid__item bubble-grid__item--blue">
+                        <div class="bubble-grid__item--content">
+                            <h3 class="heading-tertiary mb-small">Fiexd Rate</h3>
+                            <ul class="rates__list">
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bubble-grid__item bubble-grid__item--blue">
+                        <div class="bubble-grid__item--content">
+                            <h3 class="heading-tertiary mb-small">Variable Rate</h3>
+                            <ul class="rates__list">
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rates__graph graph">
+                    <div class="graph__base"></div>
+                    <div class="graph__variable-line">
+                        <img src="../public/images/variable-cost.png" alt="">
+                    </div>
+                    <div class="graph__fixed-line"></div>
+                    <div class="graph__y-label">Cost</div>
+                    <div class="graph__x-label">Time</div>
+                    <div class="graph__key">
+                        <span class="color-primary">&mdash; Variable</span>
+                        <span class="color-primary-light">&mdash; Fixed</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="testimony">
+            <div class="row--section">
+                <div class="row testimony__row">
+                    <div class="col-40">
+                        <div class="testimony__img-container">
+                            <img src="../public/images/AdobeStock_190536658.png" width="441px" alt="Jim Smith" class="testimony__img">
+                        </div>
+                    </div>
+                    <div class="col-60">
+                        <p class="testimony__para mb-small">
+                            “I have never had a bad experience with Novec and I have been a customer of theirs since 1997.  They recently processed a change of service for me and whenever I call with a question, they are always very helpful.  I appreciate that in a service environment it isn’t always easy dealing with people or their situations, but they do their best.”
+                        </p>
+                        <span class="testimony__author">
+                            Jim Smith, Customer since 1997
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="single-photo">
+            <img src="../public/images/AdobeStock_244647617.png" alt="Hands Typing">
+        </section>
+
+        <section class="faq">
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__top-bar"></div>
+        <div class="row row--section">
+            <div class="footer__logo-box">
+                <img src="../public/images/Novec-logo-1.png" alt="Novec Logo" class="footer__logo">
+            </div>
+            <div class="footer__content">
+                <div class="footer__socials mb-big">
+                    <img src="../public/images/fb-icon.png" alt="fb-icon">
+                    <img src="../public/images/twitter-icon.png" alt="twitter-icon">
+                    <img src="../public/images/youtube-icon.png" alt="youtube-icon">
+                </div>
+                <span>
+                    &copy; 2020 Novec | All rights reserved
+                </span>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="#">Privacy &amp; legal statement</a></li>
+                    <li class="footer__link"><a href="#">Site Map</a></li>
+                    <li class="footer__link"><a href="#">Careers</a></li>
+                    <li class="footer__link"><a href="#">Novec en espa&ntilde;ol</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -1,0 +1,40 @@
+.header {
+	&__image-bg {
+		background-image: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0.91) 40%, transparent 60%),
+			url("../public/images/AdobeStock_291470656a.png");
+		background-size: cover;
+		background-position: center top;
+		min-height: 30rem;
+	}
+
+	&__content-block {
+		width: 40%;
+		padding: 13rem 0 15rem;
+
+		.heading-primary {
+			width: 60%;
+		}
+	}
+
+	&__sub-row {
+		background-color: $color-grey-light;
+
+		&__option-list {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+		}
+
+		&__option {
+			display: inline-block;
+			color: $color-primary;
+			text-transform: uppercase;
+			padding: 0rem 5rem;
+			margin: 2rem 0;
+
+			&:not(:last-child) {
+				border-right: 1px solid $color-primary;
+			}
+		}
+	}
+}

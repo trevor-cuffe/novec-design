@@ -1,0 +1,43 @@
+.bubble-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: space-between;
+
+	&__item {
+		flex-basis: 49%;
+		min-width: 49%;
+		margin: 1rem 0;
+		border-radius: $border-radius;
+		padding: 3rem;
+		display: flex;
+
+		&--small {
+			padding: 1rem 0.5rem;
+
+			&--icon {
+				margin-right: 1rem;
+			}
+		}
+
+		&--grey {
+			background-color: $color-grey-light;
+		}
+		&--blue {
+			background-color: $color-primary-light;
+		}
+
+		&--icon {
+			flex: 0 0 auto;
+			height: 100%;
+			margin-right: 3rem;
+		}
+		&--content {
+			flex: 1 1 auto;
+			.heading-tertiary {
+				color: $color-primary;
+			}
+		}
+	}
+}

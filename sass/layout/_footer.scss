@@ -1,0 +1,76 @@
+.footer {
+	border-bottom: 2.5rem solid $color-secondary;
+	box-sizing: content-box;
+	height: 30rem;
+
+	@include clearfix;
+
+	//reset box-sizing for internal elements
+	* {
+		box-sizing: border-box;
+	}
+
+	.row {
+		padding: 7rem 0 4rem;
+	}
+
+	&__top-bar {
+		height: 3rem;
+		background-image: linear-gradient(to bottom, $color-primary-alt-light, $color-primary-dark);
+	}
+
+	&__logo-box {
+		float: left;
+		max-width: 25%;
+		height: 110%;
+		margin-top: -2rem;
+	}
+
+	&__logo {
+		max-height: 100%;
+	}
+
+	&__socials {
+		text-align: right;
+
+		img:not(:first-child) {
+			margin-left: 1rem;
+		}
+	}
+
+	&__content {
+		float: right;
+		width: 70%;
+		color: $color-primary;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: right;
+	}
+
+	&__links {
+		list-style: none;
+		margin-top: 2rem;
+	}
+
+	&__link {
+		display: inline-block;
+
+		&:not(:last-child)::after {
+			content: "|";
+			display: inline-block;
+			margin: 0 2rem;
+		}
+
+		a {
+			text-decoration: none;
+
+			&:visited {
+				color: $color-primary;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

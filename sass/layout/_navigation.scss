@@ -3,23 +3,25 @@
 	border-top: 1.5rem solid $color-secondary;
 
 	.main-nav {
-		margin: 0 13.5%;
 		position: relative;
 		height: 13rem;
 
 		&__logo-box {
 			display: inline-block;
 			height: 100%;
+			width: 155px;
+			position: relative;
 		}
 
 		&__logo {
 			height: 100%;
+			max-height: 155px;
+			max-width: 155px;
+			@include center-x-y;
 		}
 
 		&__search-icon-container {
-			position: absolute;
-			right: 0;
-			top: 0;
+			float: right;
 			padding: 2rem 0;
 		}
 
@@ -51,8 +53,8 @@
 
 		&__list {
 			display: flex;
-			padding: 1rem 13.5%;
-			justify-content: space-between;
+			padding: 1rem 0;
+			justify-content: space-around;
 		}
 
 		&__menu-item {
