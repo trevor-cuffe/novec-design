@@ -200,7 +200,7 @@ body {
 }
 @media (max-width: 75em) {
   .bubble-grid__item--icon {
-    max-width: 15%;
+    max-width: 25%;
     margin-right: 5%;
   }
 }
