@@ -96,7 +96,7 @@
 
 		&__menu-item {
 			display: inline-block;
-			color: white;
+			color: $color-primary-light;
 			text-transform: uppercase;
 			padding: 1rem;
 			font-weight: 500;
@@ -104,6 +104,11 @@
 
 			&:hover {
 				background-color: $color-primary-dark;
+				color: white;
+
+				@include respond(tab-port) {
+					background-color: transparent;
+				}
 			}
 		}
 

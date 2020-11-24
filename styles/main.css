@@ -742,7 +742,7 @@ body {
 }
 .navigation .sub-nav__menu-item {
   display: inline-block;
-  color: white;
+  color: #b8dff6;
   text-transform: uppercase;
   padding: 1rem;
   font-weight: 500;
@@ -750,6 +750,12 @@ body {
 }
 .navigation .sub-nav__menu-item:hover {
   background-color: #073e88;
+  color: white;
+}
+@media (max-width: 56.25em) {
+  .navigation .sub-nav__menu-item:hover {
+    background-color: transparent;
+  }
 }
 .navigation .sub-nav__checkbox {
   display: none;
