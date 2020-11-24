@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <div class="navigation">
+    <section class="navigation">
         <nav class="main-nav">
             <div class="row">
                 <div class="main-nav__logo-box">
@@ -30,6 +30,11 @@
     
         <nav class="sub-nav">
             <div class="row">
+                    
+                <input type="checkbox" class="sub-nav__checkbox" id="navi-toggle">
+
+                <label for="navi-toggle" class="sub-nav__dropdown-icon"><span class="hamburger-icon"></span></label>
+
                 <ul class="sub-nav__list">
                     <li class="sub-nav__menu-item">Sub Menu</li>
                     <li class="sub-nav__menu-item">Sub Menu</li>
@@ -41,7 +46,7 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </section>
 
     <header class="header">
         <div class="header__image-bg">
@@ -206,7 +211,8 @@
                 </div>
                 <div class="col-60">
                     <div class="service-area__map">
-                        <img src="../public/images/map-filled.png" alt="US Map" class="service-area__map--image">
+                        <img src="../public/images/map-filled.png" alt="US Map" class="service-area__map--image" ismap="ismap" usemap="#USMap">
+                        <map name="USMap"></map>
                     </div>
                 </div>
             </div>

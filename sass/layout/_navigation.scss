@@ -77,10 +77,20 @@
 	.sub-nav {
 		width: 100%;
 		background-image: linear-gradient(to bottom, $color-primary-alt-light, $color-primary-dark);
+		position: relative;
+		min-height: 3.7rem;
 
 		&__list {
 			display: flex;
 			justify-content: space-around;
+			overflow: hidden;
+			transition: height 0.3s;
+
+			@include respond(tab-port) {
+				height: 0;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 
 		&__menu-item {
@@ -91,12 +101,90 @@
 			font-weight: 500;
 			cursor: pointer;
 
+			&:hover {
+				background-color: $color-primary-dark;
+			}
+		}
+
+		&__checkbox {
+			display: none;
+
+			&:checked + .sub-nav__dropdown-icon > .hamburger-icon {
+				@include respond(tab-port) {
+					background-color: transparent;
+				}
+			}
+
+			&:checked + .sub-nav__dropdown-icon > .hamburger-icon::before {
+				@include respond(tab-port) {
+					bottom: 0px;
+					transform: translateY(0) rotateZ(135deg);
+				}
+			}
+
+			&:checked + .sub-nav__dropdown-icon > .hamburger-icon::after {
+				@include respond(tab-port) {
+					top: 0px;
+					transform: translateY(0) rotateZ(-135deg);
+				}
+			}
+
+			&:checked ~ .sub-nav__list {
+				@include respond(tab-port) {
+					height: 50rem;
+					padding: 3rem 0;
+				}
+			}
+		}
+
+		&__dropdown-icon {
+			display: none;
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			top: 0.3em;
+			right: 0;
+
 			@include respond(tab-port) {
-				font-size: 1rem;
+				display: block;
+			}
+
+			.hamburger-icon {
+				background-color: white;
 			}
 
 			&:hover {
-				background-color: $color-primary-dark;
+				cursor: pointer;
+			}
+		}
+
+		.hamburger-icon {
+			position: relative;
+			@include center-x-y;
+
+			&,
+			&::before,
+			&::after {
+				display: block;
+				height: 2px;
+				width: 2em;
+				background-color: white;
+				transition: all 0.2s;
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				transform-origin: center;
+			}
+
+			&::before {
+				bottom: 0.5em;
+			}
+
+			&::after {
+				top: 0.5em;
 			}
 		}
 	}

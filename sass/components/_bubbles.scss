@@ -28,6 +28,12 @@
 
 		&--small &--icon {
 			margin-right: 1rem;
+
+			img {
+				@include respond(tab-port) {
+					@include center-x-y;
+				}
+			}
 		}
 
 		&--grey {
@@ -43,6 +49,7 @@
 			margin-right: 3rem;
 			display: flex;
 			align-items: center;
+			position: relative;
 
 			@include respond(tab-land) {
 				max-width: 25%;
