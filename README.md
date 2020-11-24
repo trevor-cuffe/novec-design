@@ -1,7 +1,7 @@
 ## novec-design
 Internship design project for Deksia
 
-## Description
+## description
 
 The webpage should very closely resemble the template page that was given.
 
