@@ -37,6 +37,12 @@
 		&:hover {
 			cursor: pointer;
 		}
+
+		span {
+			@include center-x-y;
+			font-weight: 700;
+			font-size: 2rem;
+		}
 	}
 
 	&__expanded {

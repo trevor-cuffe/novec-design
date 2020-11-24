@@ -292,6 +292,14 @@ body {
 .dropdown-list__checkbox-label:hover {
   cursor: pointer;
 }
+.dropdown-list__checkbox-label span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 2rem;
+}
 .dropdown-list__expanded {
   display: none;
 }
