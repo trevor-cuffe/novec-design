@@ -1,6 +1,8 @@
 ## novec-design
 Internship design project for Deksia
 
+View the deployed page here: <https://eloquent-mayer-a1108a.netlify.app/>
+
 ## description
 
 The webpage should very closely resemble the template page that was given.
