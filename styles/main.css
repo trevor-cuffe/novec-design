@@ -679,6 +679,7 @@ body {
 }
 .navigation .main-nav__search-icon {
   width: 1.5em;
+  cursor: pointer;
 }
 .navigation .main-nav__list {
   text-align: right;
