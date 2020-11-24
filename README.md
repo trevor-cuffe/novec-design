@@ -11,7 +11,7 @@ I did make one adjustment to the text size - much of the text in the template wa
 
 I used a SASS compiler with .scss files to create the css stylesheet.
 
-The page is responsive based on breapoints at 600px, 900px, 1200px, and 1800px.
+The page is responsive based on breakpoints at 600px, 900px, 1200px, and 1800px.
 On 900px or less, the sub-nav menu becomes a dropdown toggle menu. This is done entirely with CSS.
 There is one other breakpoint around 1445px for a spacing issue in the header.
 
