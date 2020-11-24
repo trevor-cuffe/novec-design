@@ -4,7 +4,6 @@
 
 	.main-nav {
 		position: relative;
-		// height: 13rem;
 
 		&__logo-box {
 			display: inline-block;
@@ -12,6 +11,12 @@
 			width: 155px;
 			position: absolute;
 			z-index: -1;
+
+			@include respond(phone) {
+				width: 60px;
+				height: 75%;
+				top: 12.5%;
+			}
 		}
 
 		&__logo {
@@ -32,6 +37,7 @@
 		}
 
 		&__search-icon {
+			width: 1.5em;
 		}
 
 		&__list {
@@ -52,7 +58,7 @@
 
 			&:first-child::after {
 				content: "";
-				width: 16px;
+				width: 1em;
 				height: 1em;
 				margin-left: 0.5rem;
 				background-image: url("../public/svg/menu-triangle.svg");
@@ -84,6 +90,10 @@
 			padding: 1rem;
 			font-weight: 500;
 			cursor: pointer;
+
+			@include respond(tab-port) {
+				font-size: 1rem;
+			}
 
 			&:hover {
 				background-color: $color-primary-dark;

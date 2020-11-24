@@ -2,6 +2,12 @@
 	border-bottom: 2.5rem solid $color-secondary;
 	box-sizing: content-box;
 	height: 30rem;
+	position: relative;
+
+	@include respond(tab-port) {
+		height: 25rem;
+		border-bottom: 2rem solid $color-secondary;
+	}
 
 	@include clearfix;
 
@@ -12,26 +18,57 @@
 
 	.row {
 		padding: 7rem 0 4rem;
+
+		@include respond(tab-port) {
+			padding: 5rem 0 2rem;
+		}
 	}
 
 	&__top-bar {
 		height: 3rem;
+		width: 100%;
 		background-image: linear-gradient(to bottom, $color-primary-alt-light, $color-primary-dark);
+		position: absolute;
+		top: 0;
 	}
 
 	&__logo-box {
-		float: left;
-		max-width: 25%;
-		height: 110%;
-		margin-top: -2rem;
+		width: 22%;
+		height: 100%;
+		position: relative;
+
+		@include respond(tab-port) {
+			width: 18%;
+		}
+
+		@include respond(phone) {
+			width: 22%;
+		}
 	}
 
 	&__logo {
+		display: block;
 		max-height: 100%;
+		max-width: 100%;
+		position: absolute;
+		bottom: -2.5rem;
+
+		@include respond(tab-land) {
+			bottom: 0;
+		}
+
+		@include respond(tab-port) {
+			bottom: unset;
+			top: 10%;
+		}
 	}
 
 	&__socials {
 		text-align: right;
+
+		img {
+			width: 2em;
+		}
 
 		img:not(:first-child) {
 			margin-left: 1rem;
@@ -40,11 +77,24 @@
 
 	&__content {
 		float: right;
-		width: 70%;
+		width: 78%;
 		color: $color-primary;
 		text-transform: uppercase;
 		font-weight: bold;
 		text-align: right;
+		margin-top: 3rem;
+
+		@include respond(tab-land) {
+			font-size: 1.4rem;
+		}
+
+		@include respond(tab-port) {
+			width: 100%;
+		}
+
+		@include respond(phone) {
+			// width: 70%;
+		}
 	}
 
 	&__links {
@@ -54,11 +104,16 @@
 
 	&__link {
 		display: inline-block;
+		margin-bottom: 0.5rem;
 
 		&:not(:last-child)::after {
 			content: "|";
 			display: inline-block;
 			margin: 0 2rem;
+
+			@include respond(tab-land) {
+				margin: 0 1rem;
+			}
 		}
 
 		a {

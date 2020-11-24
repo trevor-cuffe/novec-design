@@ -44,7 +44,9 @@
 	&__key {
 		font-weight: 700;
 		text-transform: uppercase;
-		margin-top: 2rem;
+		position: absolute;
+		left: 0;
+		bottom: -5rem;
 
 		span {
 			display: block;

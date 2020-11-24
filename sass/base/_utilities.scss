@@ -2,24 +2,56 @@
 	text-align: center !important;
 }
 
+.center-med {
+	@include respond(tab-port) {
+		text-align: center !important;
+		margin: 0 auto !important;
+		display: block !important;
+	}
+}
+
+.center-small {
+	@include respond(phone) {
+		text-align: center !important;
+		margin: 0 auto !important;
+		display: block !important;
+	}
+}
+
 .heading-center {
 	width: 63%;
 	display: block;
 	margin: auto;
 	text-align: center;
+
+	@include respond(tab-port) {
+		width: 100%;
+	}
 }
 
 .mb {
 	&-small {
 		margin-bottom: 1.5rem !important;
+
+		@include respond(tab-port) {
+			margin-bottom: 1rem !important;
+		}
 	}
 
 	&-med {
 		margin-bottom: 3rem !important;
+
+		@include respond(tab-port) {
+			margin-bottom: 2rem !important;
+		}
 	}
 
 	&-big {
 		margin-bottom: 6rem !important;
+
+		@include respond(tab-port) {
+			margin-bottom: 4rem !important;
+		}
 	}
 }
 

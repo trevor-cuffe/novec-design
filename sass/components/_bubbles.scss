@@ -14,8 +14,16 @@
 		display: flex;
 		justify-content: center;
 
+		@include respond(phone) {
+			flex-basis: 100%;
+		}
+
 		&--small {
 			padding: 1rem 1.5rem;
+
+			@include respond(phone) {
+				flex-basis: 49%;
+			}
 		}
 
 		&--small &--icon {
@@ -35,6 +43,21 @@
 			margin-right: 3rem;
 			display: flex;
 			align-items: center;
+
+			@include respond(tab-land) {
+				max-width: 15%;
+				margin-right: 5%;
+			}
+
+			@include respond(tab-port) {
+				order: 2;
+				width: 3rem;
+				align-items: flex-start;
+			}
+
+			@include respond(phone) {
+				display: none;
+			}
 
 			img {
 				max-width: 100%;

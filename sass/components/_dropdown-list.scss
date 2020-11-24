@@ -4,6 +4,10 @@
 		padding: 6rem;
 		list-style: none;
 
+		@include respond(tab-port) {
+			padding-left: $row-inset-standard;
+		}
+
 		h3 {
 			display: inline-block;
 			width: 70%;

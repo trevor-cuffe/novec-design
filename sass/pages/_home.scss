@@ -10,8 +10,16 @@
 		vertical-align: middle;
 		display: inline-block;
 
+		@include respond(tab-port) {
+			width: 100%;
+		}
+
 		&:not(:last-child) {
 			padding-right: 10rem;
+
+			@include respond(tab-port) {
+				padding: 0 0 3rem;
+			}
 		}
 	}
 
@@ -36,8 +44,17 @@
 }
 
 .service-area {
+	& .heading-tertiary {
+		@include respond(tab-port) {
+			text-align: center;
+		}
+	}
 	&__grid-container {
 		max-width: 33rem;
+
+		@include respond(tab-port) {
+			margin: auto;
+		}
 	}
 
 	.bubble-grid__item--content {
@@ -60,7 +77,17 @@
 
 	&__col-left {
 		display: inline-block;
-		width: 50%;
+		width: 49.5%;
+		vertical-align: middle;
+
+		@include respond(tab-port) {
+			width: 40%;
+		}
+
+		@include respond(phone) {
+			width: 100%;
+			padding-bottom: 5rem;
+		}
 
 		img {
 			width: 100%;
@@ -71,9 +98,15 @@
 		display: inline-block;
 		width: 49.5%;
 		padding-left: 4rem;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		vertical-align: middle;
+
+		@include respond(tab-port) {
+			width: 59%;
+		}
+		@include respond(phone) {
+			width: 100%;
+			padding-left: 0;
+		}
 	}
 
 	&__list {
@@ -89,6 +122,12 @@
 		width: 49.5%;
 		padding-right: 2rem;
 		vertical-align: middle;
+
+		@include respond(phone) {
+			width: 100%;
+			padding: 0 0 2rem;
+			text-align: center;
+		}
 	}
 	&__right-para {
 		display: inline-block;
@@ -96,7 +135,20 @@
 		padding-left: 2rem;
 		vertical-align: middle;
 		line-height: 1.5em;
+
+		@include respond(phone) {
+			width: 100%;
+			padding: 0;
+		}
 	}
+
+	&__bubble-grid-container {
+		@include respond(phone) {
+			max-width: 40rem;
+			margin: auto;
+		}
+	}
+
 	&__list {
 		margin-left: 4rem;
 
@@ -109,6 +161,15 @@
 	&__graph-container {
 		width: 57%;
 		margin: 0 auto 6rem;
+
+		@include respond(tab-port) {
+			width: 75%;
+		}
+
+		@include respond(tab-port) {
+			width: 100%;
+			max-width: 40rem;
+		}
 	}
 }
 
@@ -155,6 +216,11 @@
 		padding: 0 4rem;
 		position: relative;
 		height: 100%;
+
+		@include respond(tab-port) {
+			max-width: 40rem;
+			margin: auto;
+		}
 	}
 	&__img {
 		max-width: 100%;
@@ -163,15 +229,34 @@
 	}
 	&__para {
 		padding-right: 2rem;
-		font-size: 1.8em;
+		font-size: 2.7rem;
 		line-height: 1.3em;
 		color: $color-primary;
 		padding-right: 3rem;
+
+		@include respond(tab-land) {
+			font-size: 2.2rem;
+		}
+
+		@include respond(tab-port) {
+			padding: 0;
+			margin: 2rem;
+		}
 	}
 	&__author {
-		font-size: 1.2em;
+		font-size: 1.9rem;
 		text-transform: uppercase;
 		font-weight: 700;
+		display: block;
+
+		@include respond(tab-land) {
+			font-size: 1.8rem;
+		}
+
+		@include respond(tab-port) {
+			margin-left: 6rem;
+			margin-right: 2rem;
+		}
 	}
 }
 
@@ -179,6 +264,16 @@
 	img {
 		width: 100%;
 		display: block;
+
+		@include respond(tab-port) {
+			height: 22.4rem;
+			object-fit: cover;
+		}
+
+		@include respond(phone) {
+			max-height: 34vw;
+			object-fit: cover;
+		}
 	}
 }
 
@@ -188,10 +283,30 @@
 		position: absolute;
 		width: 25%;
 		padding-top: $row-spacing-vertical;
+
+		@include respond(tab-port) {
+			position: relative;
+			width: 100%;
+			margin-bottom: 3rem;
+		}
+
+		.heading-tertiary {
+			@include respond(tab-port) {
+				display: inline-block;
+				width: 49%;
+				text-align: center;
+				padding: 0 2rem;
+			}
+		}
 	}
 
 	&__right-col {
 		width: 60%;
 		float: right;
+
+		@include respond(tab-port) {
+			width: 100%;
+			float: none;
+		}
 	}
 }
