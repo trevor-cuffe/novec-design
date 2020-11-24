@@ -981,35 +981,27 @@ body {
 .testimony .row--section {
   background-color: #b8dff6;
 }
-.testimony__row::before {
-  content: "";
-  display: block;
+.testimony__scroll {
   position: absolute;
   top: 50%;
+  transition: transform 0.2s;
+}
+.testimony__scroll:hover {
+  cursor: pointer;
+}
+.testimony__scroll-left {
   left: 0;
-  transform: translate(-100%, -50%);
-  width: 3rem;
-  height: 7rem;
-  background-color: white;
-  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  transform: translate(-100%, -50%) rotateZ(180deg);
 }
-.testimony__row:hover::before {
-  cursor: pointer;
+.testimony__scroll-left:hover {
+  transform: translate(-100%, -50%) rotateZ(180deg) scale(1.2);
 }
-.testimony__row::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
+.testimony__scroll-right {
   right: 0;
-  transform: rotate(180deg) translate(-100%, 50%);
-  width: 3rem;
-  height: 7rem;
-  background-color: white;
-  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  transform: translate(100%, -50%);
 }
-.testimony__row:hover::after {
-  cursor: pointer;
+.testimony__scroll-right:hover {
+  transform: translate(100%, -50%) scale(1.2);
 }
 .testimony__img-container {
   padding: 0 4rem;
