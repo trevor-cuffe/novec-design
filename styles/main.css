@@ -1004,6 +1004,7 @@ body {
   position: absolute;
   top: 50%;
   transition: transform 0.2s;
+  height: 8rem;
 }
 .testimony__scroll:hover {
   cursor: pointer;
