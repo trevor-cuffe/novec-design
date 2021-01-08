@@ -1,7 +1,7 @@
 ## novec-design
 Internship design project for Deksia
 
-View the deployed page here: <https://eloquent-mayer-a1108a.netlify.app/>
+View the deployed page here: <https://tcuffe-novec.netlify.app/>
 
 ## description
 
